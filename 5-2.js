@@ -1,7 +1,6 @@
 const x = "string";
-let type = typeof x;
 
-switch (type) {
+switch (typeof x) {
   case "number": console.log ("x - число");
                  break;
   case "string": console.log ("x - строка");

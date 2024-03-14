@@ -1,15 +1,11 @@
-let arr = [3, 4, 4, 4];
-let count = 1;
+let arr = [3, 3, 3, 3, 3];
+let answer = true;
 
-for (let i = 0; i<arr.length; i++) {
-  if (arr[i] == arr[i+1]) {
-    count ++;
+for (let i = 1; i<arr.length; i++) {
+  if (arr[i-1] != arr[i]) {
+    answer = false;
+    break;
   }
 }
 
-if (count == arr.length) {
-    console.log (true);
-}
-else {
-    console.log (false);
-}
+console.log (answer);
